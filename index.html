@@ -372,8 +372,43 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close-btn" data-modal-close><svg class="modal-btn-icon" width="11" height="11">
-            <use href="./images/close.svg"></use>
+            <use href="./images/sprite.svg#close-btn-icon"></use>
           </svg></button>
+          <div class="contact-form">
+            <p class="contact-form-title">Оставьте свои данные, мы вам перезвоним</p>
+            <form name="modal-contact-form" autocomplete="on">
+              <label class="input-name" for="user-name">Имя</label>
+              <div class="form-input-wrapper"><input class="form-input" type="text" name="name" id="user-name">
+                <svg class="input-icon" width="18" height="18">
+                  <use href="./images/sprite.svg#icon-person"></use>
+                </svg>
+              </div>
+          
+              <label class="input-name" for="user-tel">Телефон</label>
+              <div class="form-input-wrapper"><input class="form-input" type="tel" name="tel" id="user-tel">
+                <svg class="input-icon" width="18" height="18">
+                  <use href="./images/sprite.svg#icon-phone"></use>
+                </svg>
+              </div>
+          
+          
+              <label class="input-name" for="user-email">Почта</label>
+              <div class="form-input-wrapper"><input class="form-input" type="email" name="email" id="user-email">
+                <svg class="input-icon" width="18" height="18">
+                  <use href="./images/sprite.svg#icon-email"></use>
+                </svg>
+              </div>
+          
+              <label class="input-name" for="user-comment">Комментарий</label>
+              <textarea class="input-msg" name="comment" id="user-comment" placeholder="Введите текст"></textarea>
+          
+              <input class="check-input visually-hidden" type="checkbox" name="consent" id="consent-check">
+              <label class="check-label" for="consent-check">Соглашаюсь с рассылкой и принимаю&#160;<a class="policy-link"
+                  href="">Условия договора</a></label>
+          
+              <button class="modal-submit-btn" type="submit">Отправить</button>
+            </form>
+          </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
