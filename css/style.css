@@ -153,6 +153,11 @@ img {
 .header .contacts {
   margin-bottom: 0;
   display: flex;
+  align-items: center;
+}
+.header-contact {
+  display: flex;
+  align-items: center;
 }
 
 .contacts.list {
@@ -368,6 +373,8 @@ img {
   align-items: center;
   width: 44px;
   height: 44px;
+  background-color: transparent;
+  border-radius: 50%;
   fill: #afb1b8;
   transition: color var(--transition-duration) var(--transition-timing-function),
     background-color var(--transition-duration)
