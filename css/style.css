@@ -566,6 +566,16 @@ img {
   letter-spacing: 0.06em;
   color: var(--additional-txt-color);
 }
+.subscribe-btn::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  background-image: url(../images/icon-send.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 .backdrop {
   position: fixed;
   z-index: 100;
