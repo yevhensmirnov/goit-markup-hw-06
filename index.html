@@ -402,9 +402,14 @@
               <label class="input-name" for="user-comment">Комментарий</label>
               <textarea class="input-msg" name="comment" id="user-comment" placeholder="Введите текст"></textarea>
           
-              <input class="check-input visually-hidden" type="checkbox" name="consent" id="consent-check"/>
-              <label class="check-label" for="consent-check">Соглашаюсь с рассылкой и принимаю&#160;<a class="policy-link"
-                  href="">Условия договора</a></label>
+              <div class="conteiner-checkbox">
+                <label class="checkbox-label">
+                  <input type="checkbox" class="checkbox-input" name="checkbox" required />
+                  <span class="checkbox-icon"></span>Соглашаюсь с рассылкой и
+                  принимаю&nbsp;
+                  <a class="checkbox-link" href="#">Условия договора</a>
+                </label>
+              </div>
           
               <button class="modal-submit-btn" type="submit">Отправить</button>
             </form>

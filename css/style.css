@@ -719,35 +719,55 @@ img {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
-.check-label {
+.conteiner-checkbox {
   display: flex;
-  justify-content: center;
   align-items: center;
+  margin-right: auto;
   margin-bottom: 30px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-  color: var(--secondary-txt-color);
+  margin-left: auto;
 }
-
-.check-label::before {
-  content: "";
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primery-text-color);
+}
+.checkbox-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.checkbox-icon {
   display: inline-block;
   width: 16px;
   height: 15px;
   margin-right: 7px;
-  background-image: url(../images/checkbox.svg);
-  background-color: transparent;
-}
-
-.check-input:checked + .check-label::before {
-  background-color: var(--accent-color);
-  background-image: url(../images/icon-check.svg);
+  border: 2px solid #000000;
+  box-sizing: border-box;
   border-radius: 2px;
+  background-image: none;
+
+  transition: background-color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1),
+    border-color var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1),
+    background-image var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.checkbox-input:checked + .checkbox-icon {
+  background-color: var(--secondary-color);
+  background-image: url("../images/icon-check.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-origin: border-box;
+  border-color: transparent;
+}
 .consent {
   display: flex;
   justify-content: center;
